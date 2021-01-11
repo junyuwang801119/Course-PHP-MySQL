@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+
+<body>
+    <?php
+    $ar1 = array(1, 2, 3);
+    $ar2 = [4, 5, 6, [7, 8, 9]];
+    $ar4 = $ar2; #拷貝值(不同的記憶體位置), 不是參照
+    $ar3 = [
+        'name' => 'bill',
+        'age' => 23,
+        'data' => [5, 6, 7],
+    ];
+    $ar4[1] = 100;
+
+
+
+    // print_r($ar1);
+    print_r($ar2);
+    // print_r($ar3);
+    print_r($ar4);
+    // var_dump($ar3);
+    ?>
+
+</body>
+
+</html>
